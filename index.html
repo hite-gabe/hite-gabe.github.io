@@ -162,32 +162,32 @@
             <div class="logo-container">
                 <img src="logo.png" alt="OpenRec Logo">
             </div>
-            <p class="tagline">An ultra-lightweight, legacy-styled screen recorder built natively for Debian, Ubuntu, and Linux Mint.</p>
-            <a href="https://github.com/open-recorder/openrec/releases" class="cta-btn" target="_blank">Download .deb Package</a>
+            <p class="tagline">An ultra-lightweight, legacy screen recorder engineered specifically for older hardware profiles and X11 display servers.</p>
+            <a href="https://github.com/gabe-hite/openrec/releases" class="cta-btn" target="_blank">Download .deb Package</a>
         </header>
 
         <hr style="border: 0; border-top: 1px solid #2d3748;">
 
         <section class="features">
             <div class="feature-card">
-                <h3>Built for Gaming</h3>
-                <p>Supports fluid 60 FPS recording and high-bitrate "Ultra" quality configurations. Capture fast-paced gameplay without missing detail.</p>
+                <h3>Built for Older Devices</h3>
+                <p>Designed strictly for legacy environments. OpenRec has minimal memory overhead and resource consumption, making it ideal for older machines and lower-spec hardware configurations.</p>
             </div>
             <div class="feature-card">
                 <h3>Zero Bloat</h3>
-                <p>Written cleanly in native Python 3 and PyQt6. No background tracking, heavy web frameworks, or annoying popups.</p>
+                <p>Written cleanly using Python 3 and native PyQt6. Free from heavy background tracking services, modern application wrapper overhead, or web framework resource drains.</p>
             </div>
             <div class="feature-card">
                 <h3>Audio Capture</h3>
-                <p>Includes single-click toggles for system and desktop audio using native PulseAudio backends.</p>
+                <p>Includes basic, light UI toggles for monitoring traditional Linux systems or microphone hardware feeds through FFmpeg pipelines.</p>
             </div>
         </section>
 
         <section class="install-box">
             <h2>Quick Installation</h2>
-            <p>Download the official <code>OpenRec.deb</code> bundle, navigate to your download location, and run the system package manager:</p>
+            <p>Download the architecture configuration <code>openrec.deb</code> file, open your shell inside the download path, and pass it to your local packages manager toolchain:</p>
             <pre><code>sudo apt update
-sudo apt install ./OpenRec.deb</code></pre>
+sudo apt install ./openrec.deb</code></pre>
         </section>
 
         <section>
@@ -196,38 +196,33 @@ sudo apt install ./OpenRec.deb</code></pre>
                 <thead>
                     <tr>
                         <th>Distribution / OS</th>
-                        <th>Desktop Environment</th>
-                        <th>Status</th>
+                        <th>Display Server Requirement</th>
+                        <th>Compatibility Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Linux Mint</strong> (21.x / 22.x)</td>
-                        <td>Cinnamon, XFCE, MATE</td>
-                        <td>Fully Compatible ✅</td>
+                        <td><strong>Linux Mint</strong> (Legacy or Modern)</td>
+                        <td>X11 Session (Cinnamon, XFCE, MATE)</td>
+                        <td>Fully Supported ✅</td>
                     </tr>
                     <tr>
-                        <td><strong>Ubuntu</strong> (22.04 / 24.04 / 26.04)</td>
-                        <td>GNOME, XFCE, KDE (X11)</td>
-                        <td>Fully Compatible ✅</td>
+                        <td><strong>Ubuntu / Debian variants</strong></td>
+                        <td>X11 Desktop / Legacy environments</td>
+                        <td>Fully Supported ✅</td>
                     </tr>
                     <tr>
-                        <td><strong>Debian</strong> (12 / 13)</td>
-                        <td>Any</td>
-                        <td>Fully Compatible ✅</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Pop!_OS</strong></td>
-                        <td>COSMIC / GNOME</td>
-                        <td>Fully Compatible ✅</td>
+                        <td><strong>Modern Wayland sessions</strong></td>
+                        <td>Any environment using Wayland display</td>
+                        <td>Not Supported (Requires X11 fallback) ❌</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <footer>
-            <p>OpenRec is completely open-source under the MIT License.</p>
-            <p>View source code and contribute on <a href="https://github.com/open-recorder/openrec" target="_blank">GitHub</a></p>
+            <p>OpenRec is completely open-source software.</p>
+            <p>View the project repository and contribute on <a href="https://github.com/gabe-hite/openrec" target="_blank">GitHub</a></p>
         </footer>
     </div>
 
